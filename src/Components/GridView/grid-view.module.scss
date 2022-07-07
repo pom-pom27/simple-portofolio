@@ -1,0 +1,27 @@
+@use "../../breakpoint";
+
+.grid-view {
+  display: flex;
+  padding: 4rem 0;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (min-width: breakpoint.$sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+.grid-item {
+  @media screen and (min-width: (breakpoint.$sm)) {
+    flex: 1 0 380px;
+  }
+  // @media screen and (max-width: (breakpoint.$md)) {
+  //   flex: 1 0 400px;
+  // }
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+}

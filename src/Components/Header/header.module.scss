@@ -1,0 +1,26 @@
+@use "../../breakpoint";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @media screen and (min-width: breakpoint.$md) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.title {
+  margin-right: 1rem;
+}
+
+.job {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.name {
+  font-size: 3.3rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
