@@ -1,13 +1,16 @@
 import cx from "classnames";
 
 import { MouseEventHandler, useState } from "react";
+import { TCategory } from "../../context/data";
+import { useProjectContext } from "../../context/useProjectContext";
 import styles from "./navbar.module.scss";
 
 interface NavbarProps {}
 
-const labels = ["All", "Web", "Mobile"];
+const labels: TCategory[] = ["All", "Web", "Mobile"];
 
 const Navbar: React.FC<NavbarProps> = () => {
+  const { projects, filterByCategory } = useProjectContext();
   const [selected, setSelected] = useState(0);
 
   const handleCLick = (index: number) => setSelected(index);
@@ -15,7 +18,12 @@ const Navbar: React.FC<NavbarProps> = () => {
     <nav className={styles.nav}>
       {labels.map((label, index) => (
         <Category
-          onClick={() => handleCLick(index)}
+          onClick={(e) => {
+            e.preventDefault();
+            handleCLick(index);
+            console.log(projects);
+            filterByCategory?.(label);
+          }}
           isSelected={index == selected}
           text={label}
           key={label}
@@ -41,7 +49,7 @@ const Category: React.FC<CategoryProps> = ({ text, isSelected, onClick }) => {
       onClick={onClick}
       className={cx(styles["nav-link"], { [styles.selected]: isSelected })}
     >
-      <span>{text}</span>
+      {text}
     </a>
   );
 };
