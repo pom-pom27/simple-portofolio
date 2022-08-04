@@ -2,6 +2,9 @@ export interface IProject {
   id: number;
   name: string;
   imgUrl: string;
+  githubLink?: string;
+  liveUrl?: string;
+  playStore?: string;
   category: TCategory;
 }
 
@@ -10,32 +13,41 @@ export type TCategory = "All" | "Web" | "Mobile";
 export const myProjects: IProject[] = [
   {
     id: 1,
-    name: "Netflix Clone",
-    imgUrl: "../../../img/img_4.jpg",
+    name: "Eja Admin",
+    imgUrl: "/src/img/ea1.png",
     category: "Web",
+    githubLink: "https://github.com/seljaworks/eja-admin",
+    liveUrl: "https://eja-admin.vercel.app/",
   },
   {
     id: 2,
-    name: "Disney Plus Clone",
-    imgUrl: "../../../img/img_4.jpg",
+    name: "CodeDiary",
+    imgUrl: "/src/img/diary.png",
     category: "Web",
+    githubLink: "https://github.com/seljaworks/codediary",
   },
   {
     id: 3,
-    name: "Shoes E-commerce ",
-    imgUrl: "../../../img/img_4.jpg",
-    category: "Web",
+    name: "JDIH BABINKUM TNI",
+    imgUrl: "/src/img/jdih.png",
+    category: "Mobile",
+    githubLink: "",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.babinkum_tni.jdih_mobile",
   },
   {
     id: 4,
     name: "Bekasi News",
-    imgUrl: "../../../img/img_4.jpg",
+    imgUrl: "/src/img/news.png",
     category: "Mobile",
+    githubLink: "https://github.com/seljaworks/bnews-prototype-flutter",
   },
   {
     id: 5,
-    name: "JDIH BABINKUM TNI",
-    imgUrl: "../../../img/img_4.jpg",
-    category: "Mobile",
+    name: "E-commz",
+    imgUrl: "/src/img/ecom.png",
+    category: "Web",
+    githubLink: "https://github.com/seljaworks/.e-commz",
+    liveUrl: "https://e-commz.vercel.app/",
   },
 ];

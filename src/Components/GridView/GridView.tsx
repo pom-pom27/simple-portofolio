@@ -13,6 +13,40 @@ const GridView: React.FC<GridViewProps> = () => {
         {projects.map((project) => (
           <Flipped key={project.id} flipId={project.id}>
             <div key={project.id} className={styles["grid-item"]}>
+              <div className={styles.overlay}>
+                {project.githubLink && (
+                  <a
+                    title="Go to source code"
+                    target="_blank"
+                    href={project.githubLink}
+                    className={styles["contact-link"]}
+                  >
+                    <img src={"/src/img/github.svg"} alt={project.name} />
+                  </a>
+                )}
+
+                {project.liveUrl && (
+                  <a
+                    title="Go to live demo"
+                    target="_blank"
+                    href={project.liveUrl}
+                    className={styles["contact-link"]}
+                  >
+                    <img src={"/src/img/globe.svg"} alt={project.name} />
+                  </a>
+                )}
+                {project.playStore && (
+                  <a
+                    title="Go to Play Store"
+                    target="_blank"
+                    href={project.playStore}
+                    className={styles["contact-link"]}
+                  >
+                    <img src={"/src/img/playstore.svg"} alt={project.name} />
+                  </a>
+                )}
+              </div>
+
               <img
                 className={styles.img}
                 src={project.imgUrl}

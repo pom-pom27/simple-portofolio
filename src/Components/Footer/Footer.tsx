@@ -4,15 +4,15 @@ interface FooterProps {}
 const contacts = [
   {
     id: 1,
-    name: "github",
-    imgUrl: "../../../img/github.svg",
-    link: "https://github.com/seljaworks",
+    name: "linkedin",
+    imgUrl: "/src/img/linkedin.svg",
+    link: "https://www.linkedin.com/in/seljaworks/",
   },
   {
     id: 2,
-    name: "linkedin",
-    imgUrl: "../../../img/linkedin.svg",
-    link: "https://www.linkedin.com/in/seljaworks/",
+    name: "github",
+    imgUrl: "/src/img/github.svg",
+    link: "https://github.com/seljaworks",
   },
 ];
 
@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <div className={styles.footer}>
       <h3 className={styles.contact}>
-        Email: <a href="mailto:seljaworks@gmail.com">seljaworks@gmail.com</a>
+        Contact: <a href="mailto:seljaworks@gmail.com">seljaworks@gmail.com</a>
       </h3>
       <div className={styles["contact-icons"]}>
         {contacts.map((contact) => (

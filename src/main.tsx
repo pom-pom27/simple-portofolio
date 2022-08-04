@@ -11,4 +11,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   </React.StrictMode>
 );
 
-//TODO: add grid animation
+//TODO: add hover effect to grid item

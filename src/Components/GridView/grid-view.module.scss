@@ -7,7 +7,7 @@
   flex-direction: column;
   gap: 2rem;
 
-  animation: fade-up 1s ease-in-out;
+  animation: fade-up 500ms ease-in-out;
 
   @media screen and (min-width: breakpoint.$sm) {
     flex-direction: row;
@@ -17,6 +17,8 @@
   }
 }
 .grid-item {
+  position: relative;
+  animation: fade-in 500ms forwards ease-in-out;
   @media screen and (min-width: (breakpoint.$sm)) {
     flex: 1 0 38rem;
   }
@@ -25,11 +27,59 @@
     max-width: 423px;
     // border: 1px solid #000;
   }
-  animation: fade-in 1s forwards ease-in-out;
-}
-.img {
-  width: 100%;
-  object-fit: cover;
+
+  &:hover {
+    .overlay {
+      display: flex;
+    }
+    // .img {
+    //   filter: blur(4px);
+    // }
+  }
+
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    background-color: rgba(103, 105, 105, 0.233);
+    .icon {
+      cursor: pointer;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50px;
+    }
+
+    .title {
+      margin-top: 1rem;
+      background-color: white;
+      padding: 1rem;
+    }
+  }
+  .img {
+    transition: filter 500ms ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @keyframes fade-up {
