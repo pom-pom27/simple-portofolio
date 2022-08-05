@@ -21,7 +21,10 @@ const GridView: React.FC<GridViewProps> = () => {
                     href={project.githubLink}
                     className={styles["contact-link"]}
                   >
-                    <img src={"/src/img/github.svg"} alt={project.name} />
+                    <img
+                      src={new URL("/src/img/github.svg", import.meta.url).href}
+                      alt={project.name}
+                    />
                   </a>
                 )}
 
@@ -32,7 +35,10 @@ const GridView: React.FC<GridViewProps> = () => {
                     href={project.liveUrl}
                     className={styles["contact-link"]}
                   >
-                    <img src={"/src/img/globe.svg"} alt={project.name} />
+                    <img
+                      src={new URL("/src/img/globe.svg", import.meta.url).href}
+                      alt={project.name}
+                    />
                   </a>
                 )}
                 {project.playStore && (
@@ -42,7 +48,12 @@ const GridView: React.FC<GridViewProps> = () => {
                     href={project.playStore}
                     className={styles["contact-link"]}
                   >
-                    <img src={"/src/img/playstore.svg"} alt={project.name} />
+                    <img
+                      src={
+                        new URL("/src/img/playstore.svg", import.meta.url).href
+                      }
+                      alt={project.name}
+                    />
                   </a>
                 )}
               </div>

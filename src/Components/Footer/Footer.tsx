@@ -5,13 +5,13 @@ const contacts = [
   {
     id: 1,
     name: "linkedin",
-    imgUrl: "/src/img/linkedin.svg",
+    imgUrl: new URL("/src/img/linkedin.svg", import.meta.url).href,
     link: "https://www.linkedin.com/in/seljaworks/",
   },
   {
     id: 2,
     name: "github",
-    imgUrl: "/src/img/github.svg",
+    imgUrl: new URL("/src/img/github.svg", import.meta.url).href,
     link: "https://github.com/seljaworks",
   },
 ];

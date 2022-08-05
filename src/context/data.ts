@@ -22,14 +22,14 @@ export const myProjects: IProject[] = [
   {
     id: 2,
     name: "CodeDiary",
-    imgUrl: "/src/img/diary.png",
+    imgUrl: new URL("../img/diary.png", import.meta.url).href,
     category: "Web",
     githubLink: "https://github.com/seljaworks/codediary",
   },
   {
     id: 3,
     name: "JDIH BABINKUM TNI",
-    imgUrl: "/src/img/jdih.png",
+    imgUrl: new URL("../img/jdih.png", import.meta.url).href,
     category: "Mobile",
     githubLink: "",
     playStore:
@@ -38,14 +38,14 @@ export const myProjects: IProject[] = [
   {
     id: 4,
     name: "Bekasi News",
-    imgUrl: "/src/img/news.png",
+    imgUrl: new URL("../img/news.png", import.meta.url).href,
     category: "Mobile",
     githubLink: "https://github.com/seljaworks/bnews-prototype-flutter",
   },
   {
     id: 5,
     name: "E-commz",
-    imgUrl: "/src/img/ecom.png",
+    imgUrl: new URL("../img/ecom.png", import.meta.url).href,
     category: "Web",
     githubLink: "https://github.com/seljaworks/.e-commz",
     liveUrl: "https://e-commz.vercel.app/",
