@@ -16,6 +16,3 @@ const App: React.FC<AppProps> = () => {
 };
 
 export default App;
-
-//TODO: compress all image
-//TODO: fix image path

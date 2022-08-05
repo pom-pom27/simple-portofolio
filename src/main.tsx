@@ -10,5 +10,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </ProjectContextProvider>
   </React.StrictMode>
 );
-
-//TODO: add hover effect to grid item
