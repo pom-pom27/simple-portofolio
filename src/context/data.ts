@@ -14,7 +14,7 @@ export const myProjects: IProject[] = [
   {
     id: 1,
     name: "Eja Admin",
-    imgUrl: "/src/img/ea1.png",
+    imgUrl: "../img/ea1.png",
     category: "Web",
     githubLink: "https://github.com/seljaworks/eja-admin",
     liveUrl: "https://eja-admin.vercel.app/",
