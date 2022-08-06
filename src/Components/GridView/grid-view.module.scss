@@ -18,8 +18,9 @@
   }
 }
 .grid-item {
+  border: 1px solid #000;
   position: relative;
-  min-height: 427px;
+  min-height: 337px;
   animation: fade-in 500ms forwards ease-in-out;
   @media screen and (min-width: (breakpoint.$sm)) {
     flex: 1 0 38rem;
