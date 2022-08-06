@@ -6,6 +6,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  min-height: 954px;
 
   animation: fade-up 500ms ease-in-out;
 
@@ -18,14 +19,13 @@
 }
 .grid-item {
   position: relative;
+  min-height: 427px;
   animation: fade-in 500ms forwards ease-in-out;
   @media screen and (min-width: (breakpoint.$sm)) {
     flex: 1 0 38rem;
   }
   @media screen and (min-width: (breakpoint.$xl)) {
-    // flex: 1 0 380px;
     max-width: 423px;
-    // border: 1px solid #000;
   }
 
   &:hover {
