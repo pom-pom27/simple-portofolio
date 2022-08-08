@@ -21,7 +21,6 @@ const Navbar: React.FC<NavbarProps> = () => {
           onClick={(e) => {
             e.preventDefault();
             handleCLick(index);
-            console.log(projects);
             filterByCategory?.(label);
           }}
           isSelected={index == selected}
