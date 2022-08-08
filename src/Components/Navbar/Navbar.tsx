@@ -10,7 +10,7 @@ interface NavbarProps {}
 const labels: TCategory[] = ["All", "Web", "Mobile"];
 
 const Navbar: React.FC<NavbarProps> = () => {
-  const { projects, filterByCategory } = useProjectContext();
+  const { filterByCategory } = useProjectContext();
   const [selected, setSelected] = useState(0);
 
   const handleCLick = (index: number) => setSelected(index);
