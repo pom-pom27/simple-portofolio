@@ -12,7 +12,7 @@ const contacts = [
     id: 2,
     name: "github",
     imgUrl: new URL("../../img/github.svg", import.meta.url).href,
-    link: "https://github.com/seljaworks",
+    link: "https://github.com/pom-pom27",
   },
 ];
 
