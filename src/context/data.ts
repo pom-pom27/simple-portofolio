@@ -44,10 +44,10 @@ export const myProjects: IProject[] = [
   },
   {
     id: 5,
-    name: "E-commz",
-    imgUrl: new URL("../img/ecom.png", import.meta.url).href,
+    name: "ImageMe",
+    imgUrl: new URL("../img/imageme.jpg", import.meta.url).href,
     category: "Web",
-    githubLink: "https://github.com/seljaworks/.e-commz",
-    liveUrl: "https://e-commz.vercel.app/",
+    githubLink: "https://github.com/pom-pom27/imageMe",
+    liveUrl: "https://imageme.vercel.app/",
   },
 ];
