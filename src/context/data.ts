@@ -50,4 +50,11 @@ export const myProjects: IProject[] = [
     githubLink: "https://github.com/pom-pom27/imageMe",
     liveUrl: "https://imageme.vercel.app/",
   },
+  {
+    id: 6,
+    name: "Bard Buddy ",
+    imgUrl: new URL("../img/airn.jpg", import.meta.url).href,
+    category: "Mobile",
+    githubLink: "https://github.com/pom-pom27/ai-chat-rn",
+  },
 ];
