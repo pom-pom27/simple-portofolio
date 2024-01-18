@@ -16,7 +16,7 @@ export const myProjects: IProject[] = [
     name: "Eja Admin",
     imgUrl: new URL("../img/ea.png", import.meta.url).href,
     category: "Web",
-    githubLink: "https://github.com/seljaworks/eja-admin",
+    githubLink: "https://github.com/pom-pom27/eja-admin",
     liveUrl: "https://eja-admin.vercel.app/",
   },
   {
@@ -24,7 +24,7 @@ export const myProjects: IProject[] = [
     name: "CodeDiary",
     imgUrl: new URL("../img/diary.png", import.meta.url).href,
     category: "Web",
-    githubLink: "https://github.com/seljaworks/codediary",
+    githubLink: "https://github.com/pom-pom27/codediary",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const myProjects: IProject[] = [
     name: "Bekasi News",
     imgUrl: new URL("../img/news.png", import.meta.url).href,
     category: "Mobile",
-    githubLink: "https://github.com/seljaworks/bnews-prototype-flutter",
+    githubLink: "https://github.com/pom-pom27/bnews-prototype-flutter",
   },
   {
     id: 5,

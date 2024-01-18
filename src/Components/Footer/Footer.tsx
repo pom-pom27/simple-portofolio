@@ -6,7 +6,7 @@ const contacts = [
     id: 1,
     name: "linkedin",
     imgUrl: new URL("../../img/linkedin.svg", import.meta.url).href,
-    link: "https://www.linkedin.com/in/seljaworks/",
+    link: "https://www.linkedin.com/in/seljarante/",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <div className={styles.footer}>
       <h3 className={styles.contact}>
-        Contact: <a href="mailto:seljaworks@gmail.com">seljaworks@gmail.com</a>
+        Contact: <a href="mailto:seljarante@gmail.com">seljarante@gmail.com</a>
       </h3>
       <div className={styles["contact-icons"]}>
         {contacts.map((contact) => (
