@@ -16,7 +16,7 @@ const GridView: React.FC<GridViewProps> = () => {
               <div className={styles.overlay}>
                 {project.githubLink && (
                   <a
-                    title="Go to source code"
+                    title="Go to the source code and its description"
                     target="_blank"
                     href={project.githubLink}
                     className={styles["contact-link"]}
@@ -32,7 +32,7 @@ const GridView: React.FC<GridViewProps> = () => {
 
                 {project.liveUrl && (
                   <a
-                    title="Go to live demo"
+                    title="Go to the live demo"
                     target="_blank"
                     href={project.liveUrl}
                     className={styles["contact-link"]}
