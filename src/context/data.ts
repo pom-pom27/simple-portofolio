@@ -52,9 +52,17 @@ export const myProjects: IProject[] = [
   },
   {
     id: 6,
-    name: "Bard Buddy ",
+    name: "Bard Buddy",
     imgUrl: new URL("../img/airn.jpg", import.meta.url).href,
     category: "Mobile",
     githubLink: "https://github.com/pom-pom27/ai-chat-rn",
+  },
+  {
+    id: 7,
+    name: "Coollors",
+    imgUrl: new URL("../img/Coollors", import.meta.url).href,
+    category: "Web",
+    githubLink: "https://github.com/pom-pom27/coolors",
+    liveUrl: "https://coollors1.vercel.app/",
   },
 ];
