@@ -60,7 +60,7 @@ export const myProjects: IProject[] = [
   {
     id: 7,
     name: "Coollors",
-    imgUrl: new URL("../img/Coollors", import.meta.url).href,
+    imgUrl: new URL("../img/coollors.jpg", import.meta.url).href,
     category: "Web",
     githubLink: "https://github.com/pom-pom27/coolors",
     liveUrl: "https://coollors1.vercel.app/",
